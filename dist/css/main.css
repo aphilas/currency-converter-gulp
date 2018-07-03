@@ -1,0 +1,17 @@
+body {
+  background-color: azure; }
+
+h1, .bar {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.bar {
+  background: red;
+  color: white; }
+
+.foo {
+  -webkit-transform: skew(20deg, 30deg);
+          transform: skew(20deg, 30deg); }
+
+.btn {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg); }

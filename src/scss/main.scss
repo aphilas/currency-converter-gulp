@@ -1,0 +1,44 @@
+$primary-color: azure;
+$color: red;
+
+@mixin header{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin transform($type, $n, $o:null){
+  @if $o == null{
+    -ms-transform: $type+'('+$n+')';
+    -o-transform: $type+'('+$n+')';
+    -webkit-transform: $type+'('+$n+')';
+    transform: $type+'('+$n+')';
+  }
+
+  @if $o != null{
+    -ms-transform: $type+'('+$n+', '+$o+')';
+    -o-transform: $type+'('+$n+', '+$o+')';
+    -webkit-transform: $type+'('+$n+', '+$o+')';
+    transform: $type+'('+$n+', '+$o+')';
+  }
+}
+
+body{
+  background-color: $primary-color;
+}
+
+h1{
+  @include header;
+}
+
+.bar{
+  background: $color;
+  color: white;
+  @extend h1;
+}
+
+.foo{
+  transform: skew(20deg, 30deg);
+}
+
+.btn{
+  transform: rotate(20deg);
+}
