@@ -1,0 +1,77 @@
+.currency-card{
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  padding: 2%;
+  background: white;
+  border-radius: 0.5rem;
+
+  &:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  > .titlebar{
+    display: flex;
+    padding: 0 0.5rem;
+    color: rgba(20, 20, 20, 0.8);
+  }
+
+  > .titlebar > * {
+    padding-left: 0.5rem;
+    width: 50%;
+    margin: 0.5rem;
+  }
+
+  > .currencyselect{
+    display: flex;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+
+  > .currencyselect > *{
+    width: 50%;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: whiteSmoke;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    outline: none;
+  }
+
+  > .currencyselect > #fromSelect{
+    margin-right: 0;
+    border-right: none;
+  }
+
+  > .currencyselect > #toSelect{
+    margin-left: 0;
+  }
+
+  > .conversionbox{
+    display: flex;
+    padding: 0.5rem;
+    padding-top: 0;
+  }
+
+  > .conversionbox > *{
+    width: 50%;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-top: none;
+    text-align: center;
+    color: rgba(20, 20, 20, 0.8);
+    font-size: 2rem;
+    outline-color: rgba(0,0,0,0.1);
+  }
+
+  > .conversionbox > #fromInput{
+    margin-right: 0;
+    border-right: none;
+  }
+
+  > .conversionbox > #toInput{
+    margin-left: 0;
+    color: rgba(20, 20, 20, 0.6);
+  }
+}

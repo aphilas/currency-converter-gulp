@@ -4,15 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>gulp</title>
+  <title>Suave Currency Converter</title>
   <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
-  <h1>Gulp!</h1>
-  <h3>Jeez, I love Gulp</h3>
-  <div class="foo">Foo</div>
-    <div class="bar">Yay</div>
-  </div>
+    <div id="body-wrapper">
+        <header class="page-header">
+          <h1 class="headertitle">Suave</h1>
+          <h5 class="headertag">Currency Converter</h5>
+        </header>
+       
+        <article class="currency-card">
+          <div class="titlebar">
+            <h2>From</h2>
+            <h2>To</h2>
+          </div>
+
+          <div class="currencyselect">
+            <select id="fromSelect"></select>
+            <select id="toSelect"></select>
+          </div>
+
+          <div class="conversionbox">
+            <input type="text" id="fromInput" autofocuss>
+            <input type="text" id="toInput" readonly>
+          </div>
+        </article>
+    
+        <footer class="page-footer" id="footer">&copy; Neville Omangi, 2018</footer>
+      </div>
   <script src="js/main-bundle.min.js"></script>
 </body>
 </html>

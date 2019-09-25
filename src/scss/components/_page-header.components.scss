@@ -1,0 +1,14 @@
+.page-header{
+  text-align: center;
+  color: $light-text;
+  margin: 1rem;
+
+  > .headertitle{
+    letter-spacing: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  > .headertag{
+    margin-top: 0;
+  }
+}
